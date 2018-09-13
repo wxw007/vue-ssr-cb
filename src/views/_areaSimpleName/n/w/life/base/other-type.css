@@ -1,0 +1,75 @@
+ /* 
+    生活服务详情页的导航部分
+ */
+
+ .life-detail-nav {
+  font-size: 14px;
+}
+
+.life-detail-nav a {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.new-headline {
+  margin: 15px 0;
+  font-size: 28px;
+  color: #17191a;
+}
+
+/* 
+      新闻信息
+   */
+
+.news-msg {
+  width: 100%;
+}
+
+.news-form {
+  margin-right: 26px;
+  font-size: 12px;
+  color: #666;
+}
+
+.news-time {
+  font-size: 12px;
+  color: #666;
+}
+
+.food-type {
+  float: right;
+  font-size: 16px;
+  color: #0082c6;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1;
+}
+
+
+
+.life-detail-info.other-type {
+  min-height: 0;
+  width: 100%;
+  margin-top: 40px;
+
+}
+
+.other-type .life-info-item {
+  float:left;
+  /* display: inline-block; */
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.other-type .life-info-item b {
+  line-height: 1;
+  font-size: 18px;
+  color: #17191a;
+}
+
+.other-type .life-info-item span {
+  line-height: 1;
+  font-size: 18px;
+  color: #17191a;
+}

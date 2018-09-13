@@ -1,0 +1,214 @@
+/***********************通用基础样式************************/
+/*目前要兼容的浏览器的hack方法*/
+/*样式初始化*/
+/*屏幕分辨率与字体大小比值为25*/
+@media (min-width:1920px) {
+    .content{
+        width:1200px;
+    }
+    .shortcut_btn{
+        margin-right:-680px;
+    }
+}
+@media (max-width:1920px) {
+    .content{
+        width:1200px;
+    }
+    .shortcut_btn{
+        margin-right:-680px;
+    }
+}
+@media (max-width:1380px){
+    .shortcut_btn{
+        margin-right:-660px;
+    }
+    
+}
+@media (max-width:1340px){
+    .content{
+        width:1100px;
+    }
+    #content_area{
+        margin-left: 10px;
+    }
+    .shortcut_btn{
+        margin-right:-630px;
+    }
+}
+@media (max-width:1200px) {
+    .content{
+        width:1000px;
+    }
+    .shortcut_btn{
+        margin-right:-580px;
+    }
+    .house-item .item_right{
+        padding-top:11px;   
+    }
+    /* 新闻详情页底部的栏目推荐图片高度样式 */
+    div.recommended-column-detail .recommended-slider-box{
+        height:190px;
+    }
+    div.recommended-column-detail .recommended-news-list{
+        height:190px;
+        overflow: hidden;
+    }
+    div.recommended-column-detail .recommended-news-list a{
+        line-height: 23px;
+    }
+ }
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+}
+/*通用*/
+body {
+    margin:0;
+    padding:0;
+    font-family:"Arial","Microsoft Yahei";
+    color: #444;
+}
+select,img,input,ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,pre {
+    margin:0;
+    padding:0;
+    border:none;
+    list-style:none;
+}
+
+input,input:hover, input:visited, input:link, input:active,
+select,select:hover, select:visited, select:link, select:active {
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
+}
+/* 删除ie自带的删除按钮 */
+input::-ms-clear{display:none;}
+a,a:hover, a:visited, a:link, a:active{
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    text-decoration: none;
+}
+input {border:none;-webkit-appearance:none;}
+.fl   {float:left;}
+.fr  {float:right;}
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0;zoom:1}
+img{
+    border-style:none;
+}
+/* 统一控制的样式 */
+.content{
+    font-size:0;
+    margin-left:auto;
+    margin-right:auto;
+    /* transition:width 0.5s ease-in-out; */
+    height:100%;
+    /* min-width: 1366px;  */
+    /* box-shadow:inset 0px 0px 1px 1px rgba(0,0,0,.5); */
+}
+/************ 清除专区*************/
+/*after{
+    content: "";
+    display: block;
+    height:0;
+    clear: both;
+}*/
+/*动画模板*/
+@keyframes Shake{
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    100%{
+        transfrom: translate(-10px,0px) rotate(-10deg);
+    }
+}
+.shake{
+    animation-name:shake;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    -webkit-animation-name:shake;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+}
+
+
+
+
+ /* 
+  *顶部的蓝色标题样式
+ */
+.blue_header {
+    width: 100%;
+    height: 28px;
+    border-bottom: 1px solid #ccc;
+}
+
+.blue_header h3 {
+    display: block;
+    float: left;
+    height: 27px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #0082c6;
+    padding-right: 9px;
+    border-bottom: 2px solid #0082c6;
+    cursor: pointer;
+}
+
+.blue_header a {
+    float: right;
+    line-height: 24px;
+    font-size: 13px;
+    color: #0082c6;
+}
+
+/* 
+ *页面中间显示内容的区域
+ */
+#content_area {
+    position: relative;
+    float: left;
+    /* width: 59.1667%; */
+    width: 58%;
+    min-width: 696px;
+    min-height: 1000px;
+    padding-top: 20px;
+    margin-left: 24px;
+    margin-bottom: 50px;
+    /* box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.5); */
+}
+
+#content_area .content_hide {
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transform: translate3d(0, 100px, 0);
+}
+
+#side_right {
+    float: right;
+    /* width: 24.333%; */
+    width: 24%;
+    padding-top: 20px;
+    min-height: 1000px;
+}
+
+
+a[title="站长统计"]{
+   display: none;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+    pointer-events: inherit !important;
+}
+
+
+
+
+
+

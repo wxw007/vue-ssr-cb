@@ -1,0 +1,1204 @@
+@charset "UTF-8";
+/* 
+    scss的变量声明区域
+*/
+/*********************************************************************************************** 
+                                    ************ 
+                                      公共样式
+                                    ************
+************************************************************************************************/
+/* 
+    页面顶部导航条样式
+*/
+#header_nav {
+  width: 100%;
+  height: 44px;
+  background-color: #0082C6;
+}
+
+#header_nav .area_change {
+  float: left;
+  height: 100%;
+}
+
+#header_nav .area_change .area_show {
+  float: left;
+  height: 100%;
+}
+
+#header_nav .area_change .area_show img {
+  float: left;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  margin-top: 9px;
+  margin-right: 9px;
+}
+
+#header_nav .area_change .area_show span {
+  float: left;
+  display: inline-block;
+  line-height: 44px;
+  font-size: 18px;
+  color: #fff;
+  cursor: default;
+  background: none;
+}
+
+#header_nav .area_change i {
+  float: left;
+  display: inline-block;
+  width: 34px;
+  height: 11px;
+  margin: 18px 0 0 4px;
+  cursor: pointer;
+  background: url(../images/index_icon.png) no-repeat -40px -104px;
+}
+
+#header_nav .header_nav_menu {
+  display: block;
+  float: right;
+  font-size: 0;
+  padding-top: 14px;
+}
+
+#header_nav .header_nav_menu a {
+  display: inline-block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#header_nav .header_nav_menu i {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+/* 
+    页面左边的侧边栏
+*/
+#side_left {
+  float: left;
+  display: inline-block;
+  width: 10.1667%;
+  min-height: 1000px;
+  padding-top: 20px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+  /* 这个是菜单按钮的样式 */
+  /* 新闻菜单的样式 */
+  /* 生活服务菜单的样式 */
+  /* 单独的按钮 */
+  /* 新闻列表样式 */
+  /* 生活服务列表样式 */
+}
+
+#side_left img {
+  width: 100%;
+  height: auto;
+}
+
+#side_left .menu_item {
+  display: inline-block;
+  width: 100%;
+  height: 48px;
+  background-color: #F5F5F5;
+  font-size: 16px;
+  border-radius: 3.5px;
+  margin-bottom: 5px;
+  text-align: center;
+  line-height: 48px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+#side_left .menu_item i {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  font-style: normal;
+  padding-left: 21px;
+}
+
+#side_left .menu_item:hover {
+  border: 1px solid #0082C6;
+  color: #0082C6;
+}
+
+#side_left .menu_item.active {
+  background-color: #0082C6;
+  color: #fff;
+}
+
+#side_left .news_item {
+  color: #0082C6;
+  line-height: 48px;
+  border: 1px solid transparent;
+}
+
+#side_left .news_item i:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 19px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  background: url(../images/index_icon.png) no-repeat 0px 0px;
+  background-size:160px 164px;
+}
+
+#side_left .news_item:hover {
+  border: 1px solid #0082C6;
+}
+
+#side_left .news_item.active i:before {
+  background: url(../images/index_icon.png) no-repeat -27px 0px;
+  background-size:160px 164px;
+}
+
+#side_left .life_item {
+  color: #0082C6;
+  line-height: 48px;
+  border: 1px solid transparent;
+}
+
+#side_left .life_item i:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  background: url(../images/index_icon.png) no-repeat 0px -30px;
+}
+
+#side_left .life_item:hover {
+  border: 1px solid #0082C6;
+}
+
+#side_left .life_item.active i:before {
+  background: url(../images/index_icon.png) no-repeat -27px -31px;
+}
+
+#side_left .add_item {
+  position: relative;
+  line-height: 48px;
+  border: 1px solid transparent;
+}
+
+#side_left .add_item i {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url(../images/index_icon.png) no-repeat -53px 0;
+  padding-left: 0;
+}
+
+#side_left .add_item:hover {
+  border: 1px solid #0082C6;
+}
+
+#side_left .add_item:hover i {
+  background: url(../images/index_icon.png) no-repeat -52px -17px;
+}
+
+#side_left .add_item.active i {
+  background: url(../images/index_icon.png) no-repeat -70px 0px;
+}
+
+#side_left .news_list {
+  width: 100%;
+  margin-top: 12px;
+}
+
+#side_left .life_list {
+  width: 100%;
+  margin-top: 12px;
+}
+
+#side_left .menu_list {
+  width: 100%;
+}
+
+#side_left .menu_list li {
+  /* &:hover{
+                background-color:$blue;
+                color:#fff;
+            } */
+}
+
+/* 
+页面中间显示内容的区域
+*/
+#content_area {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 59.1667%;
+  min-height: 1000px;
+  padding-top: 20px;
+  margin-left: 24px;
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#content_area .content_hide {
+  opacity: 0;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  transform: translate3d(0, 100px, 0);
+}
+
+/* 
+    中间区域内容隐藏时用到的class
+*/
+/* 
+页面右边的侧边栏
+*/
+#side_right {
+  float: right;
+  display: inline-block;
+  width: 24.333%;
+  padding-top: 20px;
+  min-height: 1000px;
+}
+
+/* 
+顶部的蓝色标题样式
+*/
+.blue_header {
+  width: 100%;
+  height: 28px;
+  border-bottom: 1px solid #ccc;
+}
+
+.blue_header h3 {
+  display: block;
+  float: left;
+  height: 27px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #0082C6;
+  padding-right: 9px;
+  border-bottom: 2px solid #0082C6;
+  cursor: pointer;
+}
+
+.blue_header a {
+  float: right;
+  line-height: 24px;
+  font-size: 13px;
+  color: #0082C6;
+}
+
+/* 
+搜索按钮样式
+*/
+.search_box {
+  width: 100%;
+  height: 33px;
+}
+
+.search_box input {
+  float: left;
+  display: inline-block;
+  width: 79.4%;
+  height: 33px;
+  border: 1px solid #EBEBEB;
+  background-color: #F5F5F5;
+  color: #999999;
+  font-size: 14px;
+  padding-left: 9px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.search_box span {
+  float: left;
+  display: inline-block;
+  width: 20.6%;
+  height: 33px;
+  line-height: 33px;
+  background-color: #0082C6;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/*********************************************************************************************** 
+                                    ************ 
+                                      首页的样式
+                                    ************
+************************************************************************************************/
+/* 
+    热点新闻区域，即轮播图范围
+*/
+.news_content {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.8s ease-in-out;
+}
+
+.hot_news_area {
+  height: 252px;
+}
+
+.hot_news_area .hot_slide_area {
+  float: left;
+  width: 48.31%;
+  height: 252px;
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+  /*热点新闻的轮播样式区域*/
+}
+
+.hot_news_area .hot_news {
+  float: right;
+  width: 48.17%;
+  height: 252px;
+}
+
+.hot_news_area .hot_news .hot_new_headline {
+  height: 75px;
+  padding: 15px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.hot_news_area .hot_news .hot_new_headline a {
+  display: block;
+  height: 100%;
+  height: 48px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #17191A;
+}
+
+.hot_slide_area {
+  position: relative;
+  overflow: hidden;
+  /*轮播的图片样式*/
+}
+
+.hot_slide_area ul.items {
+  position: absolute;
+  float: left;
+  background: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hot_slide_area ul.items li {
+  float: left;
+  background: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hot_slide_area ul.items li a {
+  float: left;
+  line-height: normal !important;
+  padding: 0px !important;
+  border: none;
+}
+
+.hot_slide_area ul.items li img {
+  margin: 0px !important;
+  padding: 0px !important;
+  display: block;
+  border: none;
+}
+
+.hot_slide_area div.tips {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 42px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.hot_slide_area div.title {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  bottom: 15px;
+  height: 25px;
+}
+
+.hot_slide_area div.title a {
+  display: block;
+  width: 100%;
+  height: 25px;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.hot_slide_area div.title a:hover {
+  text-decoration: underline !important;
+}
+
+.hot_slide_area div.nums {
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+  width: 100%;
+  height: 10px;
+  text-align: center;
+}
+
+.hot_slide_area div.nums a {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #FFF;
+  text-indent: -99999px;
+  margin: 3px 4.5px 0px;
+  opacity: 0.7;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.hot_slide_area div.nums a.active {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+/* 
+    新闻列表的样式
+*/
+.news_list_item {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.news_list_item img {
+  width: 22.727%;
+}
+
+.news_list_item .item_right {
+  float: right;
+  width: 75.29%;
+  height: 100%;
+  padding-top: 19px;
+}
+
+.news_list_item .item_headline {
+  position: relative;
+  width: 100%;
+}
+
+.news_list_item .item_headline h3 {
+  width: 100%;
+  height: 18px;
+  line-height: 19px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #17191A;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.news_list_item .item_headline .img_box {
+  margin-bottom: -2px;
+}
+
+.news_list_item .item_headline .img_box a {
+  display: inline-block;
+  width: 22.722%;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.news_list_item .item_headline .img_box a img {
+  width: 100%;
+  height: auto;
+}
+
+.news_list_item .item_headline .img_box .more_news {
+  position: relative;
+}
+
+.news_list_item .item_headline .img_box .more_news img {
+  -webkit-filter: blur(5px);
+  /* Chrome, Opera */
+  -moz-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false);
+  /* IE6~IE9 */
+}
+
+.news_list_item .item_headline .img_box .more_news:before {
+  content: "查看更多>>";
+  position: absolute;
+  z-index: 3;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.news_list_item .item_headline .img_box .more_news:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.43);
+}
+
+.news_list_item .item_headline .img_box i {
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  margin: 0 1.434%;
+}
+
+.news_list_item .item_headline .item_msg {
+  position: relative;
+  height: 30px;
+  line-height: 15px;
+  padding-top: 15px;
+}
+
+.news_list_item .item_headline .item_msg i {
+  float: left;
+  display: inline-block;
+  width: 31px;
+  height: 15px;
+  margin-right: 20px;
+}
+
+.news_list_item .item_headline .item_msg span {
+  float: left;
+  display: inline-block;
+  height: 15px;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.news_list_item .item_headline .item_msg span:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+.news_list_item .item_headline .item_msg .unlike {
+  float: left;
+  position: absolute;
+  display: block;
+  bottom: -2px;
+  right: -4px;
+  float: right;
+  width: 21px;
+  height: 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.news_list_item .item_headline .item_msg .unlike b {
+  position: absolute;
+  display: inline-block;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 11px;
+  height: 11px;
+  background: url(../images/index_icon.png) no-repeat -53px -34px;
+}
+
+.news_list_item .item_headline .item_msg .unlike em {
+  float: none;
+  display: inline-block;
+  height: 22px;
+  padding: 0 6px;
+  line-height: 24px;
+  font-size: 12px;
+  font-style: normal;
+  color: #fff;
+  overflow: hidden;
+}
+
+.news_list_item .item_headline .item_msg .unlike:hover {
+  background: #0082C6;
+  width: 73px;
+  height: 22px;
+}
+
+.news_list_item .item_headline .item_msg .unlike:hover b {
+  background: url(../images/index_icon.png) no-repeat -39px -56px;
+}
+
+.news_list_item .item_headline .item_msg .hot_token {
+  background: url(../images/index_icon.png) no-repeat 0 -59px;
+}
+
+/* 
+    中间区域，此时是生活服务的页面
+*/
+.life_content {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.8s ease-in-out;
+}
+
+.life_list {
+  width: 100%;
+}
+
+/* 生活服务列表样式 */
+.life_list_item {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.life_list_item img {
+  width: 22.727%;
+  margin: 10px 0;
+}
+
+.life_list_item .item_right {
+  float: right;
+  width: 75.29%;
+  height: 100%;
+  margin: 10px 0;
+}
+
+.life_list_item .item_headline {
+  position: relative;
+  width: 100%;
+}
+
+.life_list_item .item_headline h3 {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  color: #17191A;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.life_list_item .item_headline p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  padding: 7px 0;
+}
+
+.life_list_item .item_headline .item_msg {
+  position: relative;
+  height: 30px;
+  line-height: 15px;
+  padding-top: 15px;
+}
+
+.life_list_item .item_headline .item_msg i {
+  float: left;
+  display: inline-block;
+  width: 31px;
+  height: 15px;
+  margin-right: 20px;
+}
+
+.life_list_item .item_headline .item_msg span {
+  float: left;
+  display: inline-block;
+  height: 15px;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.life_list_item .item_headline .item_msg span:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+.life_list_item .item_headline .item_msg span.right {
+  float: right;
+  color: #ED4242;
+  font-size: 16px;
+  font-weight: 800;
+  margin-right: 0;
+}
+
+.life_classify_icon {
+  width: 100%;
+  padding: 0 1.278%;
+  margin-top: 26px;
+  overflow: hidden;
+}
+
+.life_classify_icon a {
+  display: inline-block;
+  width: 20%;
+}
+
+.life_classify_icon a div {
+  padding: 0 23.913%;
+}
+
+.life_classify_icon a div img {
+  width: 100%;
+  height: auto;
+}
+
+.life_classify_icon a p {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #666;
+  overflow: hidden;
+}
+
+/*大使馆直通车*/
+.life_embassy {
+  margin-top: 5px;
+}
+
+.life_embassy a {
+  display: inline-block;
+  width: 100%;
+}
+
+.life_embassy a img {
+  width: 100%;
+}
+
+.life_list {
+  margin-top: 30px;
+}
+
+/* 
+    分页面的tab切换按钮样式
+*/
+.life_nav_tab {
+  width: 100%;
+  font-size: 16px;
+}
+
+.life_nav_tab .tab_btn {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-bottom: 2px solid #0082C6;
+  margin-bottom: 12px;
+}
+
+.life_nav_tab .tab_btn li {
+  float: left;
+  display: block;
+  width: 120px;
+  height: 36px;
+  line-height: 38px;
+  color: #0082C6;
+  text-align: center;
+  cursor: pointer;
+}
+
+.life_nav_tab .tab_btn .active {
+  color: #fff;
+  background-color: #0082C6;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.life_nav_tab .life_nav_classify {
+  font-size: 12px;
+  color: #666;
+}
+
+.life_nav_tab .life_nav_classify span {
+  display: inline-block;
+  float: left;
+  width: 7.244%;
+  height: 31px;
+  line-height: 31px;
+  text-align: left;
+}
+
+.life_nav_tab .life_nav_classify ul {
+  float: right;
+  width: 92.755%;
+  display: inline-block;
+  font-size: 0;
+}
+
+.life_nav_tab .life_nav_classify ul li {
+  float: left;
+  width: 12.863%;
+  height: 31px;
+  line-height: 31px;
+  text-align: left;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+/* 
+右边区域，生活服务图标的区域
+*/
+/* 快捷按钮，用来刷新，回到顶部*/
+.shortcut_btn {
+  position: fixed;
+  z-index: 10;
+  right: 50%;
+  bottom: 6%;
+  transition: all 0.5s ease-in-out;
+}
+
+.shortcut_btn span {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 18px;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #0082C6;
+  border-radius: 10px;
+}
+
+.shortcut_btn span i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.shortcut_btn .reload_btn i {
+  background: url(../images/reload_btn.png) no-repeat center center;
+}
+
+.shortcut_btn .reload_btn i:hover {
+  transform: rotate(540deg);
+}
+
+.shortcut_btn .top_btn i {
+  background: url(../images/top_btn.png) center center repeat-y;
+}
+
+.shortcut_btn .top_btn i:hover {
+  background: url(../images/top_btn.png) center center repeat-y;
+  background-position-y: -120px;
+}
+
+.life_classify {
+  width: 100%;
+  padding: 0 1.71%;
+  margin-top: 26px;
+  overflow: hidden;
+}
+
+.life_classify a {
+  display: inline-block;
+  width: 33.3%;
+}
+
+.life_classify a div {
+  padding: 0 11.7%;
+}
+
+.life_classify a div img {
+  width: 100%;
+  height: auto;
+}
+
+.life_classify a p {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  overflow: hidden;
+}
+
+/* 
+    推广样式
+*/
+.ad_box {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.ad_box .ad_slide a {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.ad_box .ad_slide a img {
+  width: 100%;
+}
+
+/* 
+图片新闻样式
+*/
+.picture_news_box {
+  margin-top: 30px;
+}
+
+.picture_news_box .picture_news_slide {
+  margin-top: 20px;
+  width: 100%;
+  height: 216px;
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.picture_news_box .picture_news_slide img {
+  display: block;
+  margin: auto;
+}
+
+.picture_news_slide {
+  position: relative;
+  overflow: hidden;
+  /*轮播的图片样式*/
+}
+
+.picture_news_slide ul.items {
+  position: absolute;
+  float: left;
+  background: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.picture_news_slide ul.items li {
+  float: left;
+  background: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.picture_news_slide ul.items li a {
+  float: left;
+  line-height: normal !important;
+  padding: 0px !important;
+  border: none;
+}
+
+.picture_news_slide ul.items li img {
+  margin: 0px !important;
+  padding: 0px !important;
+  display: block;
+  border: none;
+}
+
+.picture_news_slide div.tips {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 32px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.picture_news_slide div.title {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  height: 32px;
+}
+
+.picture_news_slide div.title a {
+  display: block;
+  width: 100%;
+  height: 32px;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 32px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.picture_news_slide div.title a:hover {
+  text-decoration: underline !important;
+}
+
+.picture_news_slide div.nums {
+  display: none;
+  /*  position:absolute; 
+        right:0px;
+        bottom:5px; 
+        width:100%;
+        height:10px;
+        text-align:center;
+        a{ 
+            display:inline-block;  
+            width:4px; 
+            height:4px; 
+            background-color:#FFF; 
+            text-indent:-99999px; 
+            margin:3px 4.5px 0px;
+            opacity:0.7;
+            transform:scale(1);
+            transition:all 0.3s ease-in-out;
+        }
+        a.active{ 
+            transform:scale(1.5);
+            opacity:1;
+        } */
+}
+
+/* 
+二维码下载区域样式
+*/
+.down_box {
+  margin-top: 30px;
+}
+
+.down_box .down_div {
+  padding: 8.2% 13.7%;
+  background-color: #FAFAFA;
+}
+
+.down_box .down_div img {
+  width: 100%;
+}
+
+/* 
+大使馆直通车样式
+*/
+.embassy_box {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.embassy_box .embassy_area {
+  width: 100%;
+}
+
+.embassy_box .embassy_area a {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.embassy_box .embassy_area a img {
+  width: 100%;
+}
+
+/* 
+    今日汇率区域样式
+*/
+.rate_box {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.rate_box .rate_area {
+  padding: 20px 0;
+}
+
+/* 
+友情链接区域
+*/
+.blogroll_box {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.blogroll_box .blogroll_area {
+  padding: 12px 0 0;
+}
+
+.blogroll_box .blogroll_area a {
+  float: left;
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  height: 26px;
+  line-height: 26px;
+  margin-right: 20px;
+}
+
+/* 
+关于我们的样式区域
+*/
+.about_box {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.about_box .about_area {
+  padding: 20px 0;
+}
+
+.about_box .about_area p {
+  position: relative;
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
+  color: #666;
+}
+
+.about_box .about_area p i {
+  float: right;
+  display: block;
+  width: 72px;
+  height: 26px;
+  margin-right: 20px;
+  background: url(../images/index_icon.png) no-repeat -88px 0;
+}
+
+/*********************************************************************************************** 
+                                    ************ 
+                                     详情页的样式
+                                    ************
+************************************************************************************************/

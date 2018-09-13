@@ -1,0 +1,123 @@
+/*  美食与房屋的信息样式 */
+
+.life-content-container {
+  margin: 40px 0px;
+}
+
+.life-content-container:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.life-detail-box {
+  float: right;
+  width: 46.164%;
+  min-height: 322px;
+  padding-top: 25px;
+  padding-bottom:40px;
+  position: relative;
+}
+
+.life-detail-box .life-info-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.life-detail-box .life-info-item b {
+  line-height: 1;
+  font-size: 18px;
+  color: #17191a;
+}
+
+.life-detail-box .life-info-item span {
+  line-height: 1;
+  font-size: 18px;
+  color: #17191a;
+}
+
+.life-detail-box .life-info-item.money {
+  line-height: 1;
+  min-height: 0;
+  display: block;
+  margin-bottom: 35px;
+}
+
+.life-detail-box .life-info-item.money span {
+  display: block;
+  line-height: 1;
+  font-size: 28px;
+  color: #ed4242;
+  font-weight: 800;
+}
+
+
+/* 无图的 */
+
+.other-type>b {
+  position: absolute;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: 800;
+  left: 0;
+  top: 0;
+}
+
+.life-detail-box.other-type {
+  min-height: 0;
+  width: 100%;
+}
+
+.other-type .life-info-item {
+  width: 49%;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.other-type .life-info-item b {
+  line-height: 1;
+  font-size: 18px;
+  color: #17191a;
+}
+
+.other-type .life-info-item span {
+  line-height: 1;
+  font-size: 18px;
+  color: #17191a;
+}
+
+/* 无图的 */
+
+/* 电话框样式 */
+
+.phone-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #0082c6;
+}
+
+.phone-box span {
+  float: right;
+  width: 78.462%;
+  height: 100%;
+  line-height: 50px;
+  text-align: left;
+  font-size: 28px;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.phone-icon {
+  display: inline-block;
+  width: 21.538%;
+  height: 100%;
+  background: url("~@/assets/web/life-phone-icon.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/* 电话框样式 */
